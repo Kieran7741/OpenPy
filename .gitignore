@@ -109,5 +109,5 @@ dmypy.json
 # Project specific
 .env/
 data/
-
+.vscode/
 

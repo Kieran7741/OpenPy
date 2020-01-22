@@ -12,10 +12,10 @@ class ShowVideoStream:
         while(self.video_stream.isOpened()):
             ok, frame = self.video_stream.read()
             if ok == True:
-                cv.imshow('frame', cv.flip(frame,0))
+                cv.imshow('frame', frame)
                 if cv.waitKey(1) & 0xFF == ord('q'):
                     break
             else:
                 break
-        
+
         self.video_stream.release()
